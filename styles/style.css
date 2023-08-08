@@ -1,5 +1,5 @@
 /* #region header*/
-body {
+.page__body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -17,18 +17,22 @@ body {
 
 .opennav {
     height: 100vh;
+    background-color: #fff;
+}
+
+.page__menu {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    background-color: #fff;
     opacity: 0;
     pointer-events: none;
 }
 
-.opennav:target {
+.page__menu:target {
     opacity: 1;
     pointer-events: all;
+    transition: 1s;
 }
 
 .opennav__list {
