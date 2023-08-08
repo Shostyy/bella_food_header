@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+ padding: 17px 16px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9px;
+}
+
+.header__logo {
+    display: flex;
+    width: 104px;
+    height: 51px;
+    background: url('/images/bella_logo.png');
+    background-repeat: no-repeat;
+}
+
+.header__navigation {
+    width: 20px;
+    height: 16px;
+    margin: 23px 0;
+    background-image: url("/images/icons/closed_menu.png");
+}
+
+.download-app {
+    padding: 50px 1.5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FAFAFA; 
+}
+
+.download-app__header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #737373;
+    margin-bottom: 17px;
+}
+
+.download-app__slogan {
+    font-size: 40px;
+    font-weight: bold;
+    color: #252B42;
+    margin-bottom: 17px;
+}
+
+.download-app__call {
+    font-size: 28px;
+    color: #737373;
+    margin-bottom: 50px;
+}
+
+.download-app__button {
+    box-sizing: border-box;
+    width: 236px;
+    height: 68px;
+    border-radius: 34px;
+    border: 1px solid #FA4A0C;
+    margin: 17px auto;
+    padding: 13px 0;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.download-app__button_orange {
+    background-color: #FA4A0C;
+    color: #FFF;
+}
+
+.download-app__button_white {
+    background-color: #FFF;
+    color: #FA4A0C;
+}
