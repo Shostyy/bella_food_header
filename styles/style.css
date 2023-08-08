@@ -1,3 +1,4 @@
+/* #region header*/
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -12,6 +13,58 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 9px;
+}
+
+.opennav {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.opennav:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.opennav__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.opennav__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.opennav__link_close-button {
+    position: relative;
+    left: 86%;
+}
+
+.opennav__link_close-button:before,
+.opennav__link_close-button:after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 20px;
+    border: 2px solid black;
+}
+
+.opennav__link_close-button:before {
+    transform: rotate(45deg);
+    top: 4px;
+}
+
+.opennav__link_close-button:after {
+    transform: rotate(-45deg);
 }
 
 .header__logo {
@@ -79,3 +132,5 @@ body {
     background-color: #FFF;
     color: #FA4A0C;
 }
+
+/* #endregion*/
